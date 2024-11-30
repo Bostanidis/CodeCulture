@@ -1,0 +1,139 @@
+
+.Header {
+    background-color: #1F2937; /* Muted Black */
+    width: 100%; /* Full width */
+    height: 5rem; /* 120px */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: left; /* Center items horizontally */
+    gap: 4vw;
+    position: fixed; /* Sticky header */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(0); /* Default position */
+    z-index: 1000; /* Ensure header is on top of other content */
+    overflow: hidden;
+}
+
+.Header.hide {
+    transform: translateY(-100%); /* Slide up when hidden */
+    opacity: 0; /* Optional: fade out while sliding */
+}
+
+.BirdLogo {
+    height: 10rem;
+    width: 13.2rem;
+    margin-left: 2vw;
+}
+
+
+.Website-Title {
+    color: #FFFFFF;
+    font-family: "Manifesto"; /* Add a fallback font */
+    letter-spacing: 0.125rem; /* 2px */
+    font-size: 2.5rem; /* 40px */
+    font-weight: bold; /* Change to 'bold' instead of 'bolder' */
+    margin-left: 4.375rem; /* 70px */
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 0.625rem; /* 10px */
+}
+
+/* Button Styles */
+.Header-Button-Articles,
+.Header-Button-About-Us,
+#Header-Button-Goback,
+.Header-Button-Contact-Us {
+    color: #3B82F6;
+    background: none;
+    border: none;
+    font-family: "Poppins";
+    font-size: 0.8125rem; /* 13px */
+    font-weight: bolder;
+    position: relative;
+    line-height: 2.5; /* Adjust line height as needed */
+    padding: 0; /* Ensure no padding interferes */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+@media (max-width: 619px) {
+    .BirdLogo {
+        height: 8rem;
+        width: 10.66rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .Header-Button-Articles,
+    .Header-Button-About-Us,
+    #Header-Button-Goback,
+    .Header-Button-Contact-Us {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 528px) {
+    .BirdLogo {
+        height: 6rem;
+        width: 7.92rem;
+    }
+}
+
+@media (max-width: 481px) {
+    .Header-Button-Articles,
+    .Header-Button-About-Us,
+    #Header-Button-Goback,
+    .Header-Button-Contact-Us {
+        font-size: 0.55rem;
+    }
+}
+
+
+/* Static line that appears on hover */
+.Header-Button-Articles:hover,
+.Header-Button-About-Us:hover,
+.Header-Button-Contact-Us:hover {
+    color: #2563EB;
+}
+
+.Header-Button-Articles::before,
+.Header-Button-About-Us::before,
+.Header-Button-Contact-Us::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0.18rem;
+    width: 0%;
+    background-color: #2563EB;
+    transition: all .3s;
+}
+
+.Header-Button-Articles:hover::before,
+.Header-Button-About-Us:hover::before,
+.Header-Button-Contact-Us:hover::before {
+    width: 100%;
+}
+
+/* Styling for the header buttons container */
+.Header-Buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.Header-Buttons1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5vw;
+    overflow: hidden;
+    position: relative;
+}
+

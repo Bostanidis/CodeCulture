@@ -1,0 +1,180 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Article-Title {
+    color: #3B82F6; /* Title color */
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.25rem; /* 36px */
+    margin-left: 0.625rem; /* 10px */
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.Flexbox1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Flexbox {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Full width */
+}
+
+/* Text Styling */
+.Introduction-Text {
+    font-size: 1.1875rem; /* 19px */
+    font-family: "Inter", sans-serif;
+    color: #1A1A1A;
+    margin-bottom: 8rem; /* 50px */
+    text-align: center;
+}
+
+/* Section Titles */
+.WebDevelopment-Title {
+    font-size: 2.1875rem; /* 35px */
+    font-family: "Montserrat", sans-serif;
+    color: 	#111827;
+}
+
+@media (max-width: 679px) {
+    .WebDevelopment-Title {
+        font-size: 1.60rem;
+    }
+
+    .html-Icon, .css-Icon, .JS-Icon {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+@media (max-width: 582px) {
+    .WebDevelopment-Title {
+        font-size: 1.37rem;
+    }
+
+    .Introduction-Text {
+        font-size: 1rem;
+    }
+
+    .Article-Title {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 529px) {
+    .WebDevelopment-Title {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* Web Development Box */
+.WebDevelopment-Title-Box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #E5E7EB;
+    align-items: flex-start; /* Aligns children to the left */
+    border: 1px solid gray;
+    width: 15.5rem; /* 400px */
+    height: 15.5rem;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Box Layout */
+.Section-Title-Countries {
+    height: 6.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.875rem; /* 30px */
+}
+
+.Box-Number {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem; /* 40px */
+    position: absolute;
+    bottom: 1.25rem; /* 20px */
+    right: 2rem; /* 50px */
+    margin: 0;
+}
+
+.Box-Number-Div {
+    margin-bottom: 3.125rem; /* 50px */
+}
+
+/* Section Box */
+.Section-Box {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.25rem;
+    margin-bottom: 10vw;
+}
+
+@media (max-width: 768px) {
+    .Section-Box {
+        flex-direction: column;
+    }
+}
+
+/* Icon Styling */
+.html-Icon, .css-Icon, .JS-Icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-left: 1.5vw;
+}
+
+.Country-Flag-USA, .Country-Flag-Canada, .Country-Flag-Germany, 
+.Country-Flag-SouthKorea, .Country-Flag-Japan, .Country-Flag-China, 
+.Country-Flag-Australia, .Country-Flag-Sweden, .Country-Flag-USA2, 
+.Country-Flag-Switzerland, .Country-Flag-Singapore {
+    width: 11%;
+    vertical-align: middle;
+}
+
+.Country-Statistics-Bullets {
+    margin-right: 3.75rem; /* 60px */
+}
+
+/* Text Elements */
+.Country-List {
+    color: #1F2937;
+    font-family: "Montserrat";
+    font-size: 1.4rem; /* 25px */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+li {
+    font-family: "Inter";
+    width: 100%;
+    color: #111827;
+    line-height: 0.9375rem; /* 15px */
+    font-size: 0.75rem; /* 12px */
+    margin-left: 1rem; /* 10px */
+    line-height: 1.8rem;
+    font-weight: bold;
+}
+
+.Bullet-Point-Salary, .Bullet-Point-Life, .Bullet-Point-Companies {
+    color: #111827;
+    width: 100%;
+    font-family: "Inter";
+    font-size: 0.75rem; /* 10px */
+    font-weight: bold;
+    display: inline;
+}
+
+

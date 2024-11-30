@@ -1,0 +1,224 @@
+.About-Us-Logo {
+    width: 40%;
+}
+
+.Flexbox-About-Us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width */
+}
+
+.Middle-Page-About-Us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+.About-Us-Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    width: 100%;
+    background-color: #1F2937;
+    margin-top: -5.5rem;
+}
+
+.Our-Goals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.Our-Goals-Title {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    color: #3B82F6;
+    margin-bottom: 2rem;
+}
+
+.Goals-Bullet-Point {
+    width: 5%;
+    margin-right: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.Goals-Bullet-Point:hover {
+    transform: scale(1.1);
+}
+
+.Bullet-Point-Our-Goals {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.15s ease;
+    color: #111827;
+}
+
+.Bullet-Point-Our-Goals:hover {
+    transform: scale(1.05);
+    color: #0d121d;
+}
+
+.Bullet-Points-About-Us-Goals-Div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    height: 3rem;
+}
+
+.Bullet-Points-About-Us-Goals {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3.5vw;
+}
+
+.Youtube-About-Us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1F2937;
+    width: 100%;
+    padding: 2rem 0rem;
+}
+
+.Youtube-About-Us-Title {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.Youtube-About-Us-Title-Div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Youtube-Logo {
+    width: 5rem;
+    margin-left: 2rem;
+}
+
+@media (max-width: 500px) {
+    .Youtube-Logo {
+        width: 3rem;
+    }
+
+    .Youtube-About-Us-Title {
+        font-size: 2rem;
+    }
+}
+
+.Youtube-About-Us-Content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15vw;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.Youtube-About-Us-Youtube-Profile {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 4rem;
+}
+
+.Youtube-About-Us-Name {
+    color: white;
+    font-size: 3rem;
+    font-family: "Inter", sans-serif;
+    margin-left: 2rem;
+}
+
+.Youtube-About-Us-Youtube-Profile-All {
+    display: flex;
+    align-items: center;
+}
+
+.Youtube-About-Us-Follow-Us {
+    background-color:#3B82F6;
+    height: 6rem;
+    width: 12rem;
+    border-radius: 2rem;
+    border: none;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 753px) {
+    .Youtube-About-Us-Youtube-Profile {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 3rem;
+    }
+    
+    .Youtube-About-Us-Name {
+        font-size: 2.25rem;
+    }
+    
+    .Youtube-About-Us-Follow-Us {
+        height: 4.5rem;
+        width: 9rem;
+        border-radius: 1.5rem;
+    }
+}
+
+@media (max-width: 574px) {
+    .Youtube-About-Us-Content {
+        flex-direction: column;
+    }
+}
+
+
+.Youtube-About-Us-Follow-Us:hover {
+    background-color:#2d69ca;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.What-We-Provide-About-Us {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.What-We-Provide-About-Us-Title {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    color: #3B82F6;
+    margin-bottom: 3rem;
+    margin-top: 9rem;
+    text-align: center;
+}
+
+.Introduction-Text-What-We-Provide {
+    font-size: 1.1875rem; /* 19px */
+    font-family: "Inter";
+    text-align: center;
+    color: #1A1A1A;
+    margin-bottom: 7rem;
+}
+
+.Bullet-Points-What-We-Provide {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+}

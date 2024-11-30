@@ -1,0 +1,122 @@
+.contact-dialog {
+    display: none;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    z-index: 1000;
+    animation: slide-in 0.5s ease forwards;
+}
+
+.dialog-content {
+    padding: 1.5rem;
+}
+
+.close-button {
+    cursor: pointer;
+    float: right;
+    font-size: 1.5rem;
+    color: red;
+}
+
+.h2 {
+    margin-top: 0;
+    color: #D35400;
+    font-family: "Montserrat", serif;
+    font-weight: bolder;
+}
+
+label {
+    font-family: "Merriweather";
+    font-weight: bold;
+    padding-bottom: 0.4rem;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Fields Styles - Applied to all input types (text, email, etc.) */
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #A4B8C4;
+    border-radius: 0.25rem;
+    resize: vertical;
+    font-family: "Merriweather", sans-serif;
+    font-size: 1rem;
+    color: #2F2F2F;
+}
+
+/* Submit Button Styles */
+.dialog-submit-button {
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit Button Hover Effect */
+.dialog-submit-button:hover {
+    cursor: pointer;
+    background-color: #0c377c;
+    transform: scale(0.98);
+}
+
+/* Animation Keyframes */
+@keyframes slide-in {
+    0% {
+        transform: translate(100%, 100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+/* Mobile Styles (Phones) */
+@media (max-width: 480px) {
+    .contact-dialog {
+        right: 1rem;
+        bottom: 1rem;
+        width: 90%; /* Use a percentage for mobile responsiveness */
+    }
+
+    .dialog-content {
+        padding: 1rem; /* Reduce padding on mobile */
+    }
+
+    .h2 {
+        font-size: 1.5rem; /* Make heading smaller for mobile */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+
+    .dialog-submit-button {
+        font-size: 0.9rem; /* Smaller button font */
+        padding: 0.6rem; /* Adjust padding for smaller buttons */
+    }
+
+    /* Optional: Make the close button a little larger for better tap targets */
+    .close-button {
+        font-size: 1.8rem; /* Larger font size for easy tap */
+    }
+}

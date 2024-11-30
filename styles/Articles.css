@@ -1,0 +1,77 @@
+.Article-Title-AR {
+    color: #3B82F6; /* Title color */
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.75rem; /* 36px */
+    margin-left: 0.625rem; /* 10px */
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+@media (max-width: 655px) {
+    .Article-Title-AR {
+        font-size: 1.60rem;
+    }
+}
+
+@media (max-width: 621px) {
+    .Article-Title-AR {
+        font-size: 1.40rem;
+    }
+}
+
+@media (max-width: 574px) {
+    .Article-Title-AR {
+        font-size: 1.20rem;
+    }
+}
+
+@media (max-width: 496px) {
+    .Article-Title-AR {
+        font-size: 1rem;
+    }
+}
+
+.Thumbnail-AR {
+    width: 12rem;
+    height: 6.76rem;
+}
+
+@media (max-width: 527px) {
+    .Thumbnail-AR {
+        width: 10rem;
+        height: 5.625rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .Thumbnail-AR {
+        width: 8rem;
+        height: 4.5rem;
+    }
+}
+
+.First-Article-AR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: transform .3s ease;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.First-Article-AR:hover {
+    transform: scale(1.02);
+}
+
+.First-Article-a-AR {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Divider-Line-AR {
+    background-color: #e9640b;
+    border: none;
+    height: 1px;
+    width: 100%;
+}
